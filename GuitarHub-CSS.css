@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.front {
+    background: url('https://newsatcl-pctr.c.yimg.jp/t/iwiz-yn/rpr/yamazakitomoyuki/00095423/top_image.jpeg?pri=l&w=800&h=450&order=c2r&cx=0&cy=0&cw=1920&ch=1080&exp=10800&fmt=webp'), rgb(14, 14, 14);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position-x: 250px;
+    height: 100vh;
+}
+
+.logo img {
+    width: 150px;
+    margin: 15px 30px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.navbar ul li {
+    font-weight: bold;
+    list-style: none;
+    display: inline-block;
+    margin: 20px 12px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #8e795f;
+    position: relative;
+    font-size: 18px;
+}
+
+.navbar ul li a::after {
+    content: '';
+    background-color: burlywood;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover:after {
+    width: 100%;
+}
+
+main {
+    position: relative;
+    top: 10vh;
+    margin: 25px;
+    width: 50%;
+}
+
+main p {
+    color: #fcfcfc;
+    font-size: 15px;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
+}
+
+main h1 {
+    margin: 3px 0px;
+    margin-bottom: 25px;
+    color: #8e795f;
+    font-size: 92px;
+    position: relative;
+}
+
+main h1::after {
+    content: '';
+    height: 5px;
+    width: 275px;
+    background-color: #001f3d;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+button {
+    font-weight: bold;
+    font-size: 15px;
+    border: 1px solid #001f3d;
+    color: #fcfcfc;
+    background-color: #001f3d;
+    margin-top: 30px;
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 50px;    
+}
+
+button:hover {
+    background-color: #fcfcfc;
+    color: #001f3d;
+}
+
+#About {
+    height: 100vh;
+    background-color: #01101f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Acme';
+    
+    
+}
+
+.image {
+    border: 10px #5F6F94 solid;
+    padding: 20px;
+    position: relative;
+    left: 0;
+}
+
+.image img {
+    width: 30vw;
+}
+
+.abhead {
+    position: absolute;
+    bottom: -80px;
+    font-size: 32px;
+    color: #8e795f;
+}
+
+.abhead h3 {
+    font-weight: bold;
+    font-family: 'Calligraffitti', cursive;
+    
+}
+
+.aboutInfo {
+    width: 40%;
+    margin-left: 50px;
+}
+
+.aboutInfo h2 {
+    position: relative;
+    bottom: 40px;
+    color: rgba(255, 255, 255, 0.904);
+    font-size: 32px;
+}
+
+.aboutInfo p {
+    position: relative;
+    bottom: 10px;
+    font-size: 24px;
+    font-family: a;
+    color: rgba(255, 255, 255, 0.904);
+}
+footer{
+    height: 25vh;
+    background-color: rgb(14, 14, 14);
+    padding: 15px;
+}
+.foot{
+    display: flex;
+    justify-content: center;
+    
+}
+.foot img{
+    width: 150px;
+}
+.foot h2{
+    color: #fcfcfc;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
+    font-weight: 200;
+    font-size: 38px;
+    margin-top: 10px ;
+    margin-left: 10px;
+}
+.socialMedia ul li{
+    display: inline-block;
+    position: relative;
+    top:80px;
+    left: -250px;
+    padding: 10px;
+}
+.socialMedia ul li img{ 
+    width: 65px;
+    
+}
+.socialMedia ul li img:hover{
+    background :url('/images/twitter-white.png') no-repeat center center;
+    position: relative;
+    background-size: 45px;
+
+}
+img#fb{
+    width: 30px;
+}
+img#fb:hover{
+    /* display: none; */
+    background :url('/images/facebook-transparent-removebg-preview.png') no-repeat center   ;
+    background-size: 30px;
+    width: 30px;
+}
