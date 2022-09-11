@@ -2,12 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Roboto Mono', monospace;
+}
+
+#active {
+    background-color: #8e795f;
+    color: black;
+    border-radius: 50px;
+    padding: 5px 15px;
+    transition: 0.3s;
 }
 
 .front {
@@ -59,6 +67,11 @@
     width: 100%;
 }
 
+.navbar ul li a#active:hover:after {
+    width: 0;
+}
+
+
 main {
     position: relative;
     top: 10vh;
@@ -97,13 +110,11 @@ button {
     color: #fcfcfc;
     background-color: #001f3d;
     margin-top: 30px;
-    width: 150px;
-    height: 40px;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 50px;
     cursor: pointer;
     transition: 0.3s;
-    border-radius: 50px;    
+    border-radius: 50px;
 }
 
 button:hover {
@@ -119,8 +130,8 @@ button:hover {
     align-items: center;
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Acme';
-    
-    
+
+
 }
 
 .image {
@@ -143,8 +154,9 @@ button:hover {
 
 .abhead h3 {
     font-weight: bold;
-    font-family: 'Calligraffitti', cursive;
-    
+    font-family: 'Rampart One', cursive;
+
+
 }
 
 .aboutInfo {
@@ -166,50 +178,229 @@ button:hover {
     font-family: a;
     color: rgba(255, 255, 255, 0.904);
 }
-footer{
+
+footer {
     height: 25vh;
     background-color: rgb(14, 14, 14);
     padding: 15px;
 }
-.foot{
+
+.foot {
     display: flex;
     justify-content: center;
-    
-}
-.foot img{
-    width: 150px;
-}
-.foot h2{
-    color: #fcfcfc;
-    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
-    font-weight: 200;
-    font-size: 38px;
-    margin-top: 10px ;
-    margin-left: 10px;
-}
-.socialMedia ul li{
-    display: inline-block;
-    position: relative;
-    top:80px;
-    left: -250px;
-    padding: 10px;
-}
-.socialMedia ul li img{ 
-    width: 65px;
-    
-}
-.socialMedia ul li img:hover{
-    background :url('/images/twitter-white.png') no-repeat center center;
-    position: relative;
-    background-size: 45px;
 
 }
-img#fb{
-    width: 30px;
+
+
+/* -----------------------REVIEW------------------------- */
+#review main {
+    height: 73.8vh;
 }
-img#fb:hover{
-    /* display: none; */
-    background :url('/images/facebook-transparent-removebg-preview.png') no-repeat center   ;
-    background-size: 30px;
-    width: 30px;
+
+#review main h1 {
+    font-size: 60px;
+    
+
+}
+
+.testimonial {
+    background-color: #01101f;
+    color: #8e795f;
+    height: 100vh;
+}
+
+.testHead h3 {
+    padding-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Rampart One', cursive;
+
+
+}
+
+.testImages h3 {
+    font-size: 40px;
+    
+}
+
+.testImages {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    justify-items: stretch;
+}
+
+.testImages p {
+    font-size: 12px;
+    width: 250px;
+    color: white;
+    margin: auto;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
+
+}
+
+.testImages img {
+    width: 300px;
+}
+
+.testImages img:hover {
+    opacity: 0.5;
+}
+
+/* ------------------------GUITAR STORE--------------------- */
+.GuitarWin main {
+    height: 73.8vh;
+}
+
+.testHead h3 {
+    position: relative;
+    bottom: 15px;
+}
+
+#guitarBuy {
+    height: 100vh;
+    background-color: #01101f;
+}
+
+.guitarsell {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    justify-items: stretch;
+    margin: auto;
+    border: 2px solid white;
+    height: 75vh;
+    width: 85vw;
+    padding: 50px;
+}
+
+.guitarsell img {
+    width: 250px;
+}
+
+.guitarsell img:hover {
+    opacity: 0.7;
+    filter: blur(1px);
+}
+
+.guitar-bass {
+    position: relative;
+    left: 350px;
+    bottom: 270px;
+}
+
+.guitarsell button {
+    border-radius: 50px;
+    position: relative;
+    bottom: 150px;
+}
+
+.guitar-acoustic button,
+.guitar-bass button {
+    bottom: 140px;
+}
+
+.guitarsell h3 {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fcfcfc;
+    position: relative;
+    bottom: 38px;
+}
+
+/* -------------------------CONTACT US------------------------------ */
+#contact-us main {
+    height: 73.8vh;
+}
+.Contact-div{
+    display: flex;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
+}
+#contact-form h3{
+    color: #fcfcfc;
+}
+#contact-form {
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('/images/Guitar-Review/Review-3.jpg');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.form-fill {
+    margin: 10px 100px
+}
+
+input {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 500px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #001f3d;
+}
+
+input[type="text"] {
+    margin-bottom: 20px;
+}
+
+input[type="email"] {
+    margin-top: 10px;
+    
+}
+
+input[type="number"] {
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+
+input[type="submit"] {
+    font-weight: bold;
+    font-size: 15px;
+    border: 1px solid #001f3d;
+    color: #fcfcfc;
+    background-color: #001f3d;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+
+    background-color: #fcfcfc;
+    color: #001f3d;
+}
+
+textarea {
+    display: block;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 500px;
+}
+.contact-fill{
+    color: #fcfcfc;
+    margin-left: 20 0px;
+    line-height: 5px;
+}
+.contact-fill h2{
+    line-height: 50px;
+}
+.conPhone{
+    margin: 50px 0px;
+}
+.conEmail{
+    margin: 50px 0px;
+
+}
+.conLocate{
+    line-height: 20px;
+    
 }
